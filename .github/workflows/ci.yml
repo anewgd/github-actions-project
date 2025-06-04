@@ -39,6 +39,8 @@ jobs:
     #   run: ./gradlew build
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
+      with:
+        gradle_version: '4.10'
 
     - name: Execute Gradle build
       run: ./gradlew build
