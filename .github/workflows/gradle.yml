@@ -48,7 +48,7 @@ jobs:
     - name: Build and Push Docker image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-        image: a1super/github-actions-demo-app:latest
+        image: a1super/github-actions-demo-app
         registry: docker.io
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
