@@ -45,6 +45,9 @@ jobs:
     - name: Execute Gradle build
       run: ./gradlew build
 
+    - name: Print binary folder path
+      run: cd ./build/libs/ && ls -al
+
     - name: Build and Push Docker image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
